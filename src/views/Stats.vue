@@ -28,7 +28,7 @@ import axios from "axios";
 export default {
     name: "Stats",
     setup() {
-        const links = ref<Link>([]);
+        const links = ref<Link[]>([]);
 
         onMounted( async () => {
             const {data} = await axios.get('stats');
